@@ -10,14 +10,14 @@ By participating in this project, you are expected to uphold our [Code of Conduc
 
 ### Reporting Bugs
 
-- Check the [Issues](<repository-url>/issues) to see if the bug has already been reported.
-- Open a new issue using the [bug report template](<repository-url>/issues/new?template=bug_report.md).
+- Check the [Issues](https://github.com/mantiumai/llm-security-examples/issues) to see if the bug has already been reported.
+- Open a new issue using the [bug report template](https://github.com/mantiumai/llm-security-examples/issues/new?template=bug_report.md).
 - Provide as much information as possible to help reproduce the bug.
 
 ### Suggesting Enhancements
 
-- Check the [Issues](<repository-url>/issues) to see if the enhancement has already been suggested.
-- Open a new issue using the [feature request template](<repository-url>/issues/new?template=feature_request.md).
+- Check the [Issues](https://github.com/mantiumai/llm-security-examples/issues) to see if the enhancement has already been suggested.
+- Open a new issue using the [feature request template](https://github.com/mantiumai/llm-security-examples/issues/new?template=feature_request.md).
 
 ### Pull Requests
 
@@ -41,7 +41,7 @@ Please ensure that your code passes all existing tests, and write new tests for 
 
 ## Community
 
-Feel free to ask questions, discuss ideas, or share feedback in the [Discussions](<repository-url>/discussions) section.
+Feel free to ask questions, discuss ideas, or share feedback in the [Discussions](https://github.com/mantiumai/llm-security-examples/discussions) section.
 
 ## Acknowledgments
 

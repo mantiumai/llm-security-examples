@@ -1,4 +1,4 @@
-# Project Title: Mitigating Vulnerabilities in LLMs
+# Mitigating Vulnerabilities in LLMs
 
 This project contains examples and guidelines to mitigate vulnerabilities like Prompt Injection and Denial of Service (DoS) in systems utilizing Large Language Models (LLMs). The repository is divided into sections to demonstrate insecure and secure coding practices.
 
