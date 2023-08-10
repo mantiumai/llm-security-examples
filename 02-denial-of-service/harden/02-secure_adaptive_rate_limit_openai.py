@@ -38,10 +38,24 @@ def adaptive_rate_limit():
     else:
         return "10 per minute"
 
-@app.route('/ask', methods=['POST'])
-@limiter.request_filter(adaptive_rate_limit)
 def ask_gpt4():
-    # ... same as before ...
+    question = request.json.get('question', '')
+
+    # Estimate the number of tokens in the question; this is a very rough estimate
+    token_count = len(question.split())
+
+    if token_count > 32000:
+        return jsonify(error="Question exceeds maximum token size"), 400
+
+    try:
+        response = openai.Completion.create(
+          engine="gpt-4-32k", # (gpt-4, gpt-3.5-turbo, etc)
+          prompt=question,
+          max_tokens=32000
+        )
+        return jsonify(answer=response.choices[0].text)
+    except Exception as e:
+        return jsonify(error=str(e)), 500
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
